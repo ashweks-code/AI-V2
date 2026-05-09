@@ -1,6 +1,6 @@
-const GOOGLE_API_KEY = "AIzaSyCRwcW2po_gHLQsf0wfYh8hPFAJzuOPILI";
+const GOOGLE_API_KEY = "AIzaSyAmawvi3Omc0aBEqI8VRrsJHEVacL_bcTI";
 
-const MODEL_NAME = "gemini-2.0-flash";
+const MODEL_NAME = "gemini-2.0-flash-lite";
 
 const messages = document.getElementById('messages');
 const input = document.getElementById('userInput');
