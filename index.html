@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashwek AI Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="app-shell">
+    <aside class="sidebar">
+      <button class="icon-btn menu-btn" id="collapseBtn" title="Collapse sidebar">☰</button>
+      <section class="brand-card">
+        <div class="agent-logo large active" id="brandLogo">
+          <div class="logo-ring"></div>
+          <div class="logo-sparks"></div>
+          <div class="agent-face">A</div>
+        </div>
+        <h1>ASHWEK AI</h1>
+        <p>AI ASSISTANT</p>
+      </section>
+
+      <button class="new-chat" id="newChat"><span>＋</span> New Conversation</button>
+
+      <nav class="side-nav">
+        <button class="nav-item active" data-panel="conversations"><span>▣</span><b>Conversations</b></button>
+        <button class="nav-item" data-panel="templates"><span>◇</span><b>Templates</b></button>
+        <button class="nav-item" data-panel="tools"><span>✣</span><b>AI Toolkit</b></button>
+        <button class="nav-item" data-panel="voice"><span>🎙</span><b>Voice Mode</b></button>
+        <button class="nav-item" data-panel="memory"><span>◎</span><b>Memory</b></button>
+        <button class="nav-item" data-panel="settings"><span>⚙</span><b>Settings</b></button>
+        <button class="nav-item" data-panel="support"><span>?</span><b>Support</b></button>
+      </nav>
+
+      <section class="mini-profile">
+        <div class="agent-logo tiny"><div class="logo-ring"></div><div class="agent-face small-face">A</div></div>
+        <div><strong>Ashwek</strong><small>Personal Plan</small></div>
+        <span class="badge">PRO</span>
+      </section>
+
+      <section class="status-card">
+        <span class="status-dot"></span>
+        <div><strong>System Status</strong><small>All Systems Operational</small></div>
+      </section>
+    </aside>
+
+    <section class="chat-panel">
+      <header class="topbar">
+        <div class="top-identity">
+          <div class="agent-logo small active"><div class="logo-ring"></div><div class="agent-face small-face">A</div></div>
+          <div>
+            <h2>Ashwek AI <span class="verified">✦</span></h2>
+            <p><span class="status-dot"></span> Online</p>
+          </div>
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn" id="searchBtn" title="Search">⌕</button>
+          <button class="icon-btn" id="themeToggle" title="Toggle theme">☀️</button>
+          <button class="icon-btn magic" id="magicBtn" title="Assistant Pulse">✦</button>
+        </div>
+      </header>
+
+      <div class="quick-prompts">
+        <button>✉️ Write a professional email</button>
+        <button>📋 Create a project plan</button>
+        <button>🧠 Explain something simply</button>
+      </div>
+
+      <div class="messages" id="messages">
+        <div class="message bot">
+          <div class="agent-logo msg-logo active"><div class="logo-ring"></div><div class="agent-face small-face">A</div></div>
+          <div class="bubble">
+            <p>Hello 👋 I am <strong>Ashwek AI</strong>, your intelligent assistant.</p>
+            <p>I can help you write, plan, analyze, summarize, and solve problems with clean formatted answers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="center-pulse"><span></span><span></span><span></span></div>
+
+      <form class="composer" id="chatForm">
+        <button type="button" class="round-btn" id="plusBtn">＋</button>
+        <button type="button" class="round-btn" id="webBtn">◎</button>
+        <textarea id="userInput" rows="1" placeholder="Message Ashwek..."></textarea>
+        <button type="button" class="round-btn mic" id="micBtn">🎙</button>
+        <button type="submit" class="send-btn" id="sendBtn">➤</button>
+      </form>
+      <p class="fine-print">Ashwek AI can make mistakes. Verify important information.</p>
+    </section>
+
+    <aside class="profile-panel">
+      <div class="hero-card">
+        <div class="city-glow"></div>
+        <div class="agent-character">
+          <div class="character-head">😎</div>
+          <div class="character-body"></div>
+        </div>
+      </div>
+      <section class="profile-title">
+        <h2>ASHWEK AI</h2>
+        <p>Your trusted partner in intelligence.</p>
+        <span class="pill"><span class="status-dot"></span> Operative Mode · Active</span>
+      </section>
+
+      <section class="feature-list" id="featurePanel">
+        <button><span>▣</span><div><strong>Smart Conversations</strong><small>Deep, context-aware responses</small></div><em>›</em></button>
+        <button><span>🎙</span><div><strong>Voice Interaction</strong><small>Natural voice communication</small></div><em>›</em></button>
+        <button><span>✣</span><div><strong>AI Toolkit</strong><small>Writing, planning and analysis</small></div><em>›</em></button>
+        <button><span>◎</span><div><strong>Memory Core</strong><small>Learns, remembers, adapts</small></div><em>›</em></button>
+      </section>
+
+      <section class="quote-card">
+        <span>“</span>
+        <p>I don’t just answer questions.<br>I solve problems.</p>
+        <strong>— Ashwek</strong>
+      </section>
+
+      <section class="stats">
+        <div><small>Response</small><strong>0.8s</strong></div>
+        <div><small>Accuracy</small><strong>98.7%</strong></div>
+        <div><small>Uptime</small><strong>100%</strong></div>
+      </section>
+    </aside>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
