@@ -1,4 +1,4 @@
-const OPENROUTER_API_KEY = "PASTE_YOUR_OPENROUTER_API_KEY_HERE";
+const OPENROUTER_API_KEY = "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";
 const MODEL_NAME = "inclusionai/ring-2.6-1t:free";
 
 const messages = document.getElementById('messages');
