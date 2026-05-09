@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashwek Your AI Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-row">
+        <div class="logo-mark">A</div>
+        <div>
+          <h1>Ashwek</h1>
+          <p>Your AI Assistant</p>
+        </div>
+      </div>
+
+      <button class="primary-btn" id="newChat">+ New Chat</button>
+
+      <nav class="nav-list">
+        <button class="nav-item active" data-action="chat">💬 <span>Chat</span></button>
+        <button class="nav-item" data-action="voice">🎙️ <span>Voice Assistant</span></button>
+        <button class="nav-item" data-action="tools">✨ <span>AI Tools</span></button>
+        <button class="nav-item" data-action="history">🕘 <span>History</span></button>
+        <button class="nav-item" data-action="saved">🔖 <span>Saved</span></button>
+        <button class="nav-item" data-action="settings">⚙️ <span>Settings</span></button>
+      </nav>
+
+      <div class="side-card" id="sideInfo">
+        <strong>Apple Intelligence Style</strong>
+        <p>Clean UI, smooth dark/light mode, voice input, formatted AI replies.</p>
+      </div>
+
+      <div class="profile-card">
+        <div class="profile-dot">A</div>
+        <div>
+          <strong>Ashwek</strong>
+          <p>Online • Ready</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="chat-area">
+      <header class="topbar">
+        <button class="icon-btn mobile-menu" id="menuBtn">☰</button>
+        <div>
+          <h2>Ashwek Your AI Assistant</h2>
+          <p id="statusText">Online • Neural Interface Active</p>
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn" id="themeToggle">☀️</button>
+          <div class="orb-logo">A</div>
+        </div>
+      </header>
+
+      <section class="hero-panel" id="heroPanel">
+        <h3>Good day, Ashwek 👋</h3>
+        <p>Ask anything. I will answer in a clean, formatted, ChatGPT-style response.</p>
+        <div class="quick-prompts">
+          <button>✉️ Write a professional email</button>
+          <button>🧠 Explain something simply</button>
+          <button>🛠️ Create a step-by-step plan</button>
+          <button>💻 Help with code</button>
+        </div>
+      </section>
+
+      <section class="messages" id="messages"></section>
+
+      <footer class="composer-wrap">
+        <div class="composer">
+          <button class="plus-btn" id="attachBtn">+</button>
+          <textarea id="userInput" rows="1" placeholder="Message Ashwek..."></textarea>
+          <button class="mic-btn" id="micBtn" title="Voice input">🎙️</button>
+          <button class="send-btn" id="sendBtn" title="Send">➤</button>
+        </div>
+        <small>Ashwek can make mistakes. Please verify important information.</small>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
