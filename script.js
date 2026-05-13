@@ -1,4 +1,4 @@
-const GROQ_API_KEY = "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";
+const GROQ_API_KEY = "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";
 
 const MODEL_NAME = "llama-3.3-70b-versatile";
 
